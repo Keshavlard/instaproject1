@@ -1,0 +1,45 @@
+*,*:before,*:after{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(8, 8, 8);
+    box-sizing: border-box;
+}
+
+.nav{
+    color: white;
+    width: 70vw;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav a{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(185, 185, 185);
+    font-style: normal;
+    font-size: 20px;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    padding: 5px 15px;
+}
+
+a:after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background-color: rgb(75, 209, 63);
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+a:hover{
+    color: white;
+}
+a:hover:after{
+    width: 100%;
+}
