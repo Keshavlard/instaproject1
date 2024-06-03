@@ -1,3 +1,3 @@
-# instaproject1
+# smallproject1
 
 navbar underline effect
